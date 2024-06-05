@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(38, 37, 37);
+}
+.todo-app h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    padding: 30px;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(241, 234, 214);
+    border-radius: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 20px;
+    padding: 40px 20px 70px;
+    border-radius: 10px;
+}
+.row{
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.form-inline input {
+    flex: 1; /* ทำให้ input ขยายตัวเต็มพื้นที่ที่เหลือ */
+    margin-right: 10px;
+}
+.form-inline select{
+    margin-right: 5px;
+}
+.form-control-short {
+    width: auto; /* หรือกำหนดค่าตามต้องการเช่น 100px */
+    flex: 0 0 auto; /* ป้องกัน element จากการยืดตาม flex container */
+}
+option{
+    text-align: center;
+}
+.important {
+    color: rgb(144, 2, 2);
+}
+.normal {
+    color: rgb(0, 104, 0);
+}
+.less-important {
+    color: rgb(22, 22, 151);
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 7px 10px 7px 10px;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+} 
+ul li span{
+    position:absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+ul li span:hover{
+    background: #bbbdc0;
+}
+/* ul li::before{
+    position:absolute;
+    border-radius: 50%;
+    background-image: url(assets/img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    content: '';
+    height: 28px;
+    width: 28px;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked::before{
+    background-image: url(assets/img/check.png);
+} */
