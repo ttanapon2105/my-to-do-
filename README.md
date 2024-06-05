@@ -1,1 +1,1 @@
-this error to use picture wait for fix bug
+this error to use image wait for fix bug
